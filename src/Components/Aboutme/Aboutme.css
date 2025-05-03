@@ -1,0 +1,175 @@
+.aboutmecontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.aboutmetextcontainer {
+    max-width: 800px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 30px;
+    border-radius: 20px;
+    color: white;
+    box-shadow: 0 0 10px #38bdf8;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.aboutme-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid red;
+}
+
+.aboutmecontainer h2 {
+    font-size: 40px;
+    color: white;
+}
+
+.aboutmetextcontainer p {
+    font-size: 18px;
+    line-height: 1.6;
+    opacity: 0.95;
+}
+.resumecontainer {
+    display: flex;
+    gap: 20px;
+    padding: 40px;
+}
+
+.resumecontainer button{
+    height: 50px;
+    width: 150px;
+    border-radius: 10px;    
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    backdrop-filter: blur(4px);    
+}
+
+.resumecontainer button:hover {
+    box-shadow: 0 0 10px #38bdf8, 0 0 10px #38bdf8, 0 0 20px #38bdf8;
+    transform: scale(1.05);
+}
+
+
+.aboutmeinfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aboutmepogress {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.containerinfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    height: 250px;
+    width: 300px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    backdrop-filter: blur(4px);
+    text-align: center;
+    gap: 10px;
+}
+
+
+.bottominfo {
+    width: 90%;
+}
+
+.label {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 4px;
+}
+
+.subtext {
+    font-size: 18px;
+    opacity: 0.8;
+    margin-top: 2px;
+}
+
+.stat {
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0 0 5px #38bdf8;
+}
+
+@media (max-width: 768px) {
+    .aboutmecontainer {
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .aboutmecontainer h2 {
+        font-size: 32px;
+    }
+
+    .aboutmetextcontainer {
+        padding: 20px;
+    }
+
+    .resumecontainer {
+        padding: 20px;
+    }
+
+    .resumecontainer button {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .aboutmepogress {
+        flex-direction: column;
+        gap: 10px;
+        width: 90%;
+        align-items: center;
+    }
+
+    .containerinfo {
+        width: 90%;
+        height: auto;
+    }
+
+    .aboutmetextcontainer p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .aboutmecontainer h2 {
+        font-size: 28px;
+    }
+
+    .aboutmetextcontainer p {
+        font-size: 14px;
+    }
+
+    .resumecontainer button {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .containerinfo {
+        width: 100%;
+        height: auto;
+    }
+}

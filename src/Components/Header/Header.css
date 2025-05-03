@@ -1,0 +1,196 @@
+.skillsyeah {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 30px;
+    align-items: center;
+}
+
+.skillsyeah button {
+    border-radius: 10px;
+    height: 50px;
+    width: 120px;
+    font-size: 18px;
+}
+
+.headercontainer button {
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    backdrop-filter: blur(4px);
+}
+
+.headercontainer button:hover {
+    box-shadow: 0 0 10px #38bdf8, 0 0 10px #38bdf8, 0 0 20px #38bdf8;
+    transform: scale(1.05);
+}
+
+.projectscontact {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.projectscontact button {
+    height: 50px;
+    border-radius: 10px;
+    width: 90px;
+    font-size: 18px;
+}
+
+.mylinks {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: auto;
+}
+
+.Linksofme {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+
+.Linksofme a {
+    font-size: 40px;
+    color: white;
+}
+
+.Linksofme a:hover {
+    color:#38bdf8;
+    transform: scale(1.2);
+}
+
+
+
+.headercontainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 60px;
+}
+
+.info-container {
+    flex-direction: column;
+    display: flex;
+}
+
+.info-container h1 {
+    font-size: 80px;
+    margin: 0;
+    color: white;
+}
+
+.info-container h2 {
+    font-size: 30px;
+    margin: 0;
+    color: white;
+}
+
+.location {
+    font-size: 23px;
+    color: white;
+}
+
+.anime {
+    height: 500px;
+    width: 100%;
+}
+
+.contact-info p{
+    font-size: 30px;
+    color: white;
+    margin-top: 0;
+}
+
+@media (max-width: 768px) {
+    .headercontainer {
+        flex-direction: column;
+        justify-content: flex-start;
+        height: auto;
+        gap: 30px;
+        padding-top: 100px;
+    }
+
+    .info-container h1 {
+        font-size: 50px;
+    }
+
+    .info-container h2 {
+        font-size: 24px;
+    }
+
+    .location {
+        font-size: 18px;
+    }
+
+    .skillsyeah {
+        display: none;
+    }
+
+    .projectscontact {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .projectscontact button {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .Linksofme {
+        gap: 15px;
+    }
+
+    .Linksofme a {
+        font-size: 30px;
+    }
+
+    .anime {
+        height: 400px;
+    }
+
+    .contact-info p {
+        font-size: 16px;
+    }
+
+    .contact-info a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .info-container h1 {
+        font-size: 40px;
+    }
+
+    .info-container h2 {
+        font-size: 22px;
+    }
+
+    .location {
+        font-size: 16px;
+    }
+
+    .skillsyeah button {
+        width: 90%;
+    }
+
+    .projectscontact button {
+        width: 90%;
+    }
+
+    .contact-info p {
+        font-size: 14px;
+    }
+
+    .contact-info a {
+        font-size: 14px;
+    }
+}

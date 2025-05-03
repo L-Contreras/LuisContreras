@@ -1,0 +1,93 @@
+.portfoliocontainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.portfoliocontainer h2 {
+    font-size: 40px;
+    color: white;
+    margin: 0;
+}
+
+.titlecontainer p {
+    color: white;
+    font-size: 22px;
+}
+
+.mywork {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(4px);  
+    justify-content: center;
+    width: fit-content;
+    align-self: center;
+    border-radius: 20px;
+    width: 100%;
+}
+
+.mywork h3 {
+    color: white;
+}
+
+.workchoosecontainer {
+    height: 70px;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+
+.showcasecontainer {
+    display: flex;
+    height: auto;
+    justify-content: center;
+}
+
+.titlecontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tab-wrapper {
+    position: relative;
+    display: flex;
+    gap: 0;
+    border-radius: 20px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.tab-highlight {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 33.33%;
+    background: rgba(0, 123, 255, 0.2); /* transparent blue */
+    border: 1px solid rgba(0, 123, 255, 0.8); /* solid visible border */
+    border-radius: 20px;
+    z-index: 0;
+    box-shadow: 0 0 15px rgba(0, 123, 255, 0.5); /* subtle blue glow */
+    backdrop-filter: blur(6px); /* optional frosted effect */
+}
+
+@media (max-width: 768px) {
+    .workchoosecontainer {
+        font-size: 14px;
+        padding: 0 5px;
+    }
+
+    .tab-highlight {
+        width: 33.33%;
+    }
+}
