@@ -34,7 +34,6 @@ function Header() {
                     </section>
                     <section className="projectscontact">
                         <a href="#portfolio"><button>Projects</button></a>
-                        <button>Contact</button>
                     </section>
     
                 </section>
