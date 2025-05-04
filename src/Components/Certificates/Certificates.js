@@ -8,7 +8,7 @@ function Certificates() {
     return (
         <div className="tiles-container" data-aos="fade-down">
             <a
-                href="/LuisContrerasFront-end.pdf" 
+                href={`${process.env.PUBLIC_URL}/LuisContrerasFront-end.pdf`}
                 target="_blank"
                 rel="noopener noreferrer"
             >
@@ -17,7 +17,7 @@ function Certificates() {
                 </section>
             </a>
             <a
-                href="/LuisContrerasDatastructures.pdf" 
+                href={`${process.env.PUBLIC_URL}/LuisContrerasDatastructures.pdf`}
                 target="_blank"
                 rel="noopener noreferrer"
             >
@@ -26,7 +26,7 @@ function Certificates() {
                 </section>
             </a>
             <a
-                href="/LuisContrerasPython.pdf" 
+                href={`${process.env.PUBLIC_URL}/LuisContrerasPython.pdf`}
                 target="_blank"
                 rel="noopener noreferrer"
             >
