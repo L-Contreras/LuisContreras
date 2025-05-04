@@ -15,6 +15,7 @@ function Aboutme() {
                         href={`${process.env.PUBLIC_URL}/LuisContreras.pdf`}
                         target="_blank"
                         rel="noopener noreferrer"
+                        download
                     >
                         <button>Download CV</button>
                     </a>
