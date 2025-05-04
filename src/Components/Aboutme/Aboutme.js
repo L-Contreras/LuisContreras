@@ -12,7 +12,7 @@ function Aboutme() {
                 </section>
                 <section className="resumecontainer">
                     <a 
-                        href="/LuisContreras.pdf"
+                        href={`${process.env.PUBLIC_URL}/LuisContreras.pdf`}
                         target="_blank"
                         rel="noopener noreferrer"
                         download
